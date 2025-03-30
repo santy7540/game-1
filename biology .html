@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="biology.css">
+    <title>Juego de Memoria Biología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(36, 2, 230);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff0000;
+        }
+
+        .game-board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 400px;
+            justify-content: center;
+            margin-top: 1px;
+        }
+
+        .card {
+            width: 500px;
+            height: 500px;
+            background-color: #1900ff;
+            border: 2px solid #ff0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .card.flipped {
+            background-color: #b700ff;
+        }
+
+        .card.matched {
+            background-color: #ffae00;
+        }
+
+        .card.x {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .card.check {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        #score {
+            margin-top: 20px;
+        }
+    </style> 
+</head>
+<body>
+
+<h1>Juego de Memoria: Biología</h1>
+<p id="score">Puntaje: 0</p>
+
+<div class="game-board" id="gameBoard"></div>
+
+
+<script src="biology.js"> 
+    
+</script> 
+
+</body>
+</html>
+
